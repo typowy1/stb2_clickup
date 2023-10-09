@@ -1,4 +1,4 @@
-package pl.stb2clickup.tests.requests.space;
+package pl.stb2clickup.requests;
 
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
