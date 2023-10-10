@@ -1,4 +1,4 @@
-package pl.stb2clickup.dto.response;
+package pl.stb2clickup.dto.task.response;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;

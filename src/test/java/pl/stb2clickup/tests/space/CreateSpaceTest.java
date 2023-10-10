@@ -13,6 +13,18 @@ import java.util.Map;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class CreateSpaceTest {
+//    struktura projektu
+//    main/java/webservis/dto/endpoint
+//    main/java/webservis/properties/endpoint
+//    main/java/webservis/url/endpoint
+
+//    test/java/webservis/requests/endpoint
+//    test/java/webservis/requests/endpoint
+//    test/java/BaseRequest
+
+//      test/java/webservis/tests/endpoint
+//      test/java/webservis/tests/e2e
+
 
     private static final String SPACE_NAME = "MY SPACE FROM JAVA";
     private static final String NEW_SPACE_NAME = "My new space name";

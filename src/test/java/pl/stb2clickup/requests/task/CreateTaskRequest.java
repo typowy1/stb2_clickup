@@ -2,8 +2,8 @@ package pl.stb2clickup.requests.task;
 
 import io.restassured.response.Response;
 import org.json.JSONObject;
-import pl.stb2clickup.dto.request.CreateTaskRequestDto;
-import pl.stb2clickup.dto.response.CreateTaskResponseDto;
+import pl.stb2clickup.dto.task.request.CreateTaskRequestDto;
+import pl.stb2clickup.dto.task.response.CreateTaskResponseDto;
 import pl.stb2clickup.requests.BaseRequest;
 import pl.stb2clickup.url.ClickUpUrl;
 

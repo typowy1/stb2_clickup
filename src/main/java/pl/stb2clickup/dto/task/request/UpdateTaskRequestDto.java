@@ -1,9 +1,9 @@
-package pl.stb2clickup.dto.request;
+package pl.stb2clickup.dto.task.request;
 
 import lombok.Data;
 
 @Data
-public class CreateTaskRequestDto {
+public class UpdateTaskRequestDto {
     private String name;
     private String description;
     private String status;
