@@ -1,5 +1,6 @@
 package pl.stb2clickup.requests;
 
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
@@ -18,6 +19,7 @@ public class BaseRequest {
         requestBuilder.setBaseUri(ClickUpUrl.getBaseUrl()); //ustawiamy bazowy adres api
         requestBuilder.setContentType(ContentType.JSON); //ustawiamy ContentType
         requestBuilder.addHeader("Authorization", ClickUpProperties.getToken()); //ustawiamy token
+        requestBuilder.addFilter(new AllureRestAssured());//dodanie raportu allurowego
 
         return requestBuilder.build();
 
@@ -30,6 +32,7 @@ public class BaseRequest {
         requestBuilder.addHeader("Authorization", ClickUpProperties.getToken()); //ustawiamy token
         requestBuilder.addFilter(new RequestLoggingFilter()); //logowanie
         requestBuilder.addFilter(new ResponseLoggingFilter()); //logowanie
+        requestBuilder.addFilter(new AllureRestAssured()); //dodanie raportu allurowego
 
         return requestBuilder.build();
 
