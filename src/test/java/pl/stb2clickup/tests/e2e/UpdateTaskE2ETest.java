@@ -1,5 +1,6 @@
 package pl.stb2clickup.tests.e2e;
 
+import io.qameta.allure.Step;
 import io.restassured.response.Response;
 import org.json.JSONObject;
 import org.junit.jupiter.api.Test;
@@ -25,6 +26,7 @@ class UpdateTaskE2ETest {
     private String listId;
     private String taskId;
 
+    @Step("Test E2E")
     @Test
 //    minus tego podejścia jest taki że nie ma widocznych poszczegolnych krokow w run tylko taka metoda updateTaskE2ETest jest widoczna
     void updateTaskE2ETest() {
